@@ -2,7 +2,7 @@
 
 A sleek, modern web-based code editor that allows you to write and preview HTML, CSS, and JavaScript code in real-time. Perfect for quick prototyping, learning web development, or testing code snippets.
 
-![Code Editor Preview](CodeEditor.png)
+
 
 ## ✨ Features
 
