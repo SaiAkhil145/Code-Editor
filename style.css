@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background-color: #1e1e2f;
+}
+
+/* Header Section */
+.container {
+    background-color: #2898c1;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.container h1 {
+    font-weight: 600;
+    padding: 1rem;
+}
+
+/* Editor Layout */
+.editor {
+    height: 100%;
+    background-color: #252744;
+    text-align: start;
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 8px;
+}
+
+/* Left & Right Panels */
+.left, 
+.right {
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+/* Labels */
+label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+    transition: color 0.3s ease;
+}
+
+label:hover {
+    color: #00e1ff;
+}
+
+label i {
+    padding-right: 5px;
+}
+
+/* Icon Branding Colors */
+label i.bxl-html5 { color: #e44d26; }
+label i.bxl-css3 { color: #264de4; }
+label i.bxl-javascript { color: #f0db4f; }
+label i.bx-play { color: #28a745; }
+
+/* Textareas */
+textarea {
+    width: 100%;
+    min-height: 300px;
+    background-color: #1f1f1f;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 12px 16px;
+    line-height: 1.5;
+    border-radius: 6px;
+    resize: vertical;
+    overflow-y: auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Output Frame */
+iframe {
+    width: 100%;
+    height: 95%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .editor {
+        flex-direction: column;
+    }
+    textarea {
+        height: 200px;
+    }
+}
